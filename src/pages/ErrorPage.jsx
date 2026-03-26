@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
-    <section className="flex flex-col items-center justify-center text-center my-60 px-4">
+    <section className="flex flex-col items-center justify-center text-center md:my-60 my-20 px-4">
       <h1 className="text-5xl sm:text-7xl font-extrabold text-blue-600">404</h1>
       <h2 className="mt-4 text-2xl font-semibold text-gray-900">
         Page not found

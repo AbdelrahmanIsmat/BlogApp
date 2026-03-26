@@ -4,16 +4,10 @@ import SearchInput from "./SearchInput";
 
 const Header = ({ search, setSearch }) => {
   return (
-    <header className="px-4  mb-6 bg-white  md:mb-12 max-w-5xl m-auto ">
-      <div className="container mx-auto px-5 md:px-0 ">
-        <div className="flex gap-2 h-20 items-center justify-between flex-wrap">
-          <Logo />
-          <Link to={"/"}>Home</Link>
-          <div className="">
-            <SearchInput search={search} setSearch={setSearch} />
-          </div>
-        </div>
-      </div>
+    <header className="flex flex-wrap items-center justify-between gap-3 container max-w-5xl mx-auto p-4 mb-6 bg-white">
+      <Logo />
+      <Link to={"/"}>Home</Link>
+      <SearchInput search={search} setSearch={setSearch} />
     </header>
   );
 };
